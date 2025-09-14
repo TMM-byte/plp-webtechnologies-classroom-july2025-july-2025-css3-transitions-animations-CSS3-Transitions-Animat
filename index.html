@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Agriculture Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <h1>🌾 Smart Agriculture Dashboard</h1>
+    <p>Monitor, analyze, and optimize your farm in real time.</p>
+  </header>
+
+  <section class="controls">
+    <button id="irrigateBtn">Start Irrigation</button>
+    <button onclick="toggleModal()">View Soil Data</button>
+    <button onclick="toggleAnalytics()">Toggle Analytics</button>
+  </section>
+
+  <section class="field">
+    <div class="crop" id="crop1">🌿 Crop A</div>
+    <div class="crop" id="crop2">🌿 Crop B</div>
+    <div class="crop" id="crop3">🌿 Crop C</div>
+  </section>
+
+  <section class="sensor-panel">
+    <h2>Sensor Readings</h2>
+    <p>Temperature: <span id="tempValue">--</span>°C</p>
+    <p>Humidity: <span id="humidityValue">--</span>%</p>
+    <p>Water Need: <span id="waterNeed">--</span> liters</p>
+  </section>
+
+  <section class="weather-widget">
+    <h2>Weather Forecast</h2>
+    <p>Today: Sunny 🌞</p>
+    <p>Tomorrow: Light Rain 🌧️</p>
+  </section>
+
+  <div class="modal hidden">🌍 Soil Moisture: 42%<br>pH Level: 6.8</div>
+
+  <section class="analytics hidden" id="analyticsPanel">
+    <h2>Crop Analytics</h2>
+    <p id="cropStatus">Crop health data will appear here.</p>
+  </section>
+
+  <footer>
+    <p>Powered by Tabitha's AgriTech</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
